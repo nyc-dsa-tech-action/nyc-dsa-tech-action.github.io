@@ -1,0 +1,62 @@
+/* General Tags */
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  filter: brightness(80%);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+hr {  
+  border: none;
+  background-color: gainsboro;
+  height: 1px;
+  width: 100%;
+}
+
+/* General Classes */
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.horizontal li {
+  display: inline;
+}
+
+.margins {
+  margin: 50px;
+}
+
+.navbar-spacing li {
+  margin-right: 50px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: red;
+  height: 50px;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 20px;
+}
