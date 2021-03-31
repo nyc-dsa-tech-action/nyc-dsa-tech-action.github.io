@@ -17,8 +17,8 @@ export const AccordionItem = ({heading, children}: AccordionItemProps): JSX.Elem
     <ChakraAccordionItem>
       <Heading >
         <AccordionButton>
-          <Flex flex='1' textAlign="left">
-           {heading}
+          <Flex flex='1' textAlign='left'>
+            {heading}
           </Flex>
           <AccordionIcon />
         </AccordionButton>

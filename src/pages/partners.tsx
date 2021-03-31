@@ -18,17 +18,17 @@ export default function Principles(): JSX.Element {
         <Wrap spacing={8} justify='center'>
           <WrapItem>
             <Link href='https://techaction.nyc'>
-              <Image src='../../Images/NYC_DSA_TechAction.jpg' boxSize='200px' />
+              <Image src='../../Images/Partners/NYC_DSA_TechAction.jpg' boxSize='200px' />
             </Link>
           </WrapItem>
           <WrapItem>
             <Link href='https://local3ibew.org'>
-              <Image src='../../Images/IBEW.jpg' boxSize='200px' />
+              <Image src='../../Images/Partners/IBEW.jpg' boxSize='200px' />
             </Link>
           </WrapItem>
           <WrapItem>
             <Link href='https://www.vocal-ny.org'>
-              <Image src='../../Images/VocalNY.jpg' boxSize='200px' />
+              <Image src='../../Images/Partners/VocalNY.jpg' boxSize='200px' />
             </Link>
           </WrapItem>
         </Wrap>
