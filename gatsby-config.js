@@ -6,5 +6,8 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['@chakra-ui/gatsby-plugin'],
+  plugins: [
+    '@chakra-ui/gatsby-plugin',
+    `gatsby-plugin-react-helmet`
+  ],
 }

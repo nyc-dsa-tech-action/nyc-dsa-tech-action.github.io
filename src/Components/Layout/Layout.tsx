@@ -6,17 +6,31 @@ import {
 } from "@chakra-ui/react"
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
+import theme from '../../../theme'
+import { Helmet } from 'react-helmet'
 
-export const Layout = ({children, theme}: ChakraProviderProps): JSX.Element => {
+export interface LayoutProps extends ChakraProviderProps {
+  title: string
+}
+
+export const Layout = ({
+    children,
+    title,
+  }: LayoutProps): JSX.Element => {
   return (
-    <ChakraProvider theme={theme}>
-      <Flex minHeight='100vh' direction='column'>
-        <Navbar />
-        <Flex flex='1' direction='column' px={5}>
-          {children}
+    <>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
+      <ChakraProvider theme={theme}>
+        <Flex minHeight='100vh' direction='column'>
+          <Navbar />
+          <Flex flex='1' direction='column' px={5}>
+            {children}
+          </Flex>
+          <Footer />
         </Flex>
-        <Footer />
-      </Flex>
-    </ChakraProvider>
+      </ChakraProvider>
+    </>
   )
 }

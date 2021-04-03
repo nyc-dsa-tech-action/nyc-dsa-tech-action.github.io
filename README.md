@@ -15,8 +15,3 @@ A static [Gatsby](https://www.gatsbyjs.com/docs/) website for the Internet for A
 - Install dependencies: `npm install`
 - Start a development server: `gatsby develop`
 - View the site locally at http://localhost:8000/
-
-## Deploying
-- Merge changes to the `source` branch, not the `master` branch - `master` is where the `public` folder Gatsby builds will be pushed to and published by Github Pages.
-- Run `npm run deploy`
-- [Here's Gatsby's guide to deploy to Github Pages.](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)

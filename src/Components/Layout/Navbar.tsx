@@ -11,45 +11,27 @@ import { Link as GatsbyLink } from 'gatsby'
 
 export const Navbar = (): JSX.Element => {
   return (
-    <Flex alignItems='center' bgColor='#3200ad' h={75} w='100%' mb={5} justifyContent='space-between'>
-      <LinkBox as={HStack}>
+    <Flex alignItems='center' bgColor='darkBlurple' h={75} mb={5} justifyContent='space-between'>
+      <LinkBox as={HStack} mx={2}>
         <Image src='../../../Images/Logos/BlackLogo.jpg' boxSize='50px'/>
-        <LinkOverlay
+        <LinkOverlay 
           as={GatsbyLink}
           to='/'
           color='white'
-          mx={2}
           fontSize={20}
           _hover={{
             textDecoration: 'underline',
-            textDecorationColor: '#FFBD59',
-            textDecorationThickness: 2,
+            textDecorationColor: 'gold',
           }}
         >
           Internet for All NYC
         </LinkOverlay>
       </LinkBox>
       <HStack spacing={2} mx={2}>
-        <Link
-          as={GatsbyLink}
-          to='/principles'
-          color='white'
-          _hover={{
-            textDecoration: 'underline',
-            textDecorationColor: '#FFBD59',
-          }}
-        >
+        <Link as={GatsbyLink} to='/principles' variant='nav'>
           Principles
         </Link>
-        <Link 
-          as={GatsbyLink}
-          to='/partners'
-          color='white'
-          _hover={{
-            textDecoration: 'underline',
-            textDecorationColor: '#FFBD59',
-          }}
-        >
+        <Link as={GatsbyLink} to='/partners' variant='nav'>
           Coalition Partners
         </Link>
       </HStack>
