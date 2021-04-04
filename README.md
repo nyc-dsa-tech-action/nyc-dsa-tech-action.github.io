@@ -7,7 +7,7 @@ A static [Gatsby](https://www.gatsbyjs.com/docs/) website for the Internet for A
 - TypeScript
 
 ## Requirements
-- Node.js
+- Node.js 10.0 
 
 ## Running Locally
 - Copy this repo: `git clone https://github.com/nyc-dsa-tech-action/nyc-dsa-tech-action.github.io.git`
