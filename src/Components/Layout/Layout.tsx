@@ -19,13 +19,11 @@ export const Layout = ({
   }: LayoutProps): JSX.Element => {
   return (
     <>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
+      <Helmet title={title} />
       <ChakraProvider theme={theme}>
         <Flex minHeight='100vh' direction='column'>
           <Navbar />
-          <Flex flex='1' direction='column' px={5}>
+          <Flex flex='1' direction='column' px={5} align='center'>
             {children}
           </Flex>
           <Footer />
