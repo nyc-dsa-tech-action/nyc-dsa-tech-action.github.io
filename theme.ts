@@ -2,7 +2,7 @@ import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
   colors: {
-    darkBlurple: '#3200AD',
+    darkBlurple: '#4000B4',
     teal: '#7CC9BF',
     gold: '#7CC9BF',
   },
