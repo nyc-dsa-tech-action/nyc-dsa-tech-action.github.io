@@ -28,14 +28,20 @@ export const Navbar = (): JSX.Element => {
         </LinkOverlay>
       </LinkBox>
       <HStack spacing={2} mx={2}>
-        <Link as={GatsbyLink} to='/take-action' variant='nav'>
-          Take Action
-        </Link>
         <Link as={GatsbyLink} to='/principles' variant='nav'>
           Principles
         </Link>
-        <Link as={GatsbyLink} to='/partners' variant='nav'>
+        <Link as={GatsbyLink} to='/stories' variant='nav'>
+          Stories
+        </Link>
+        <Link as={GatsbyLink} to='/research' variant='nav'>
+          Research
+        </Link>
+        <Link as={GatsbyLink} to='/coalition-partners' variant='nav'>
           Coalition Partners
+        </Link>
+        <Link as={GatsbyLink} to='/take-action' variant='nav'>
+          Take Action
         </Link>
       </HStack>
     </Flex>
