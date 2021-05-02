@@ -6,28 +6,29 @@ import {
   Link,
   LinkBox,
   LinkOverlay,
-} from "@chakra-ui/react"
+} from '@chakra-ui/react'
 import { Link as GatsbyLink } from 'gatsby'
 
 export const Navbar = (): JSX.Element => {
   return (
-    <Flex alignItems='center' bgColor='darkBlurple' h={75} mb={5} justifyContent='space-between'>
-      <LinkBox as={HStack} mx={2}>
-        <Image src='../../../Images/Logos/BlackLogo.jpg' boxSize='50px'/>
+    <Flex alignItems='center' bgColor='purple' px={16} py={12} justifyContent='space-between'>
+      <LinkBox as={HStack}>
+        <Image src='../../../Images/Logos/ColorLogo.jpg' boxSize='45px'/>
         <LinkOverlay 
           as={GatsbyLink}
           to='/'
           color='white'
-          fontSize={20}
+          fontSize={32}
+          fontFamily='Neue Haas Grotesk Display Pro 75 Bold'
           _hover={{
             textDecoration: 'underline',
-            textDecorationColor: 'gold',
+            textDecorationColor: 'orange',
           }}
         >
           Internet for All NYC
         </LinkOverlay>
       </LinkBox>
-      <HStack spacing={2} mx={2}>
+      <HStack spacing={6}>
         <Link as={GatsbyLink} to='/principles' variant='nav'>
           Principles
         </Link>
