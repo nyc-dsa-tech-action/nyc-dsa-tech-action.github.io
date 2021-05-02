@@ -2,9 +2,12 @@ import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
   colors: {
-    darkBlurple: '#4000B4',
-    teal: '#7CC9BF',
-    gold: '#7CC9BF',
+    purple: '#4000B4',
+    aqua: '#5CCDC1',
+    orange: '#FFB803',
+  },
+  fonts: {
+    'Neue Haas Grotesk Display Pro': 'Neue Haas Grotesk Display Pro'
   },
   components: {
     Link: {
@@ -13,8 +16,9 @@ const theme = extendTheme({
           color: 'white',
           _hover: {
             textDecoration: 'underline',
-            textDecorationColor: 'gold',
-          }
+            textDecorationColor: 'orange',
+          },
+          fontFamily: 'Neue Haas Grotesk Display Pro',
         }
       }
     },
