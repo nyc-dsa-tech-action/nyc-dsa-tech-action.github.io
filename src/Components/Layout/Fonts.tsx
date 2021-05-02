@@ -5,17 +5,25 @@ export const Fonts = (): JSX.Element => (
   <Global
     styles={`
       @font-face {
-        font-family: 'Neue Haas Grotesk Display Pro 55 Roman';
+        font-family: 'Neue Haas Grotesk Display Pro';
+        src: url('../../../Fonts/NeueHaasDisplay-Roman.eot');
+        src:
+            url('../../../Fonts/NeueHaasDisplay-Roman.eot?#iefix') format('embedded-opentype'),
+            url('../../../Fonts/NeueHaasDisplay-Roman.woff') format('woff'),
+            url('../../../Fonts/NeueHaasDisplay-Roman.ttf') format('truetype');
+        font-weight: normal;
         font-style: normal;
-        font-weight: 400;
-        src: url('../../fonts/NeueHaasDisplayRoman.woff') format('woff');
       }
       @font-face {
-        font-family: 'Neue Haas Grotesk Display Pro 75 Bold';
+        font-family: 'Neue Haas Grotesk Display Pro';
+        src: url('../../../Fonts/NeueHaasDisplay-Bold.eot');
+        src:
+            url('../../../Fonts/NeueHaasDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../../../Fonts/NeueHaasDisplay-Bold.woff') format('woff'),
+            url('../../../Fonts/NeueHaasDisplay-Bold.ttf') format('truetype');
+        font-weight: bold;
         font-style: normal;
-        font-weight: 700;
-        src: url('../../fonts/NeueHaasDisplayBold.woff') format('woff') format('woff');
-        }
+      }
       `
     }
   />

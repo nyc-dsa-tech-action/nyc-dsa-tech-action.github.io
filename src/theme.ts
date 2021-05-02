@@ -7,8 +7,7 @@ const theme = extendTheme({
     orange: '#FFB803',
   },
   fonts: {
-    'Neus Haas Grotesk Display Pro 55 Roman': 'Neue Haas Grotesk Display Pro 55 Roman',
-    'Neus Haas Grotesk Display Pro 75 Bold': 'Neue Haas Grotesk Display Pro 75 Bold'
+    'Neue Haas Grotesk Display Pro': 'Neue Haas Grotesk Display Pro'
   },
   components: {
     Link: {
@@ -19,7 +18,7 @@ const theme = extendTheme({
             textDecoration: 'underline',
             textDecorationColor: 'orange',
           },
-          fontFamily: 'Neus Haas Grotesk Display Pro 55 Roman'
+          fontFamily: 'Neue Haas Grotesk Display Pro',
         }
       }
     },
