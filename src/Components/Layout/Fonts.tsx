@@ -24,6 +24,16 @@ export const Fonts = (): JSX.Element => (
         font-weight: bold;
         font-style: normal;
       }
+      @font-face {
+        font-family: 'Inconsolata';
+        src: url('../../../Fonts/Inconsolata.eot');
+        src:
+            url('../../../Fonts/Inconsolata.eot?#iefix') format('embedded-opentype'),
+            url('../../../Fonts/Inconsolata.woff') format('woff'),
+            url('../../../Fonts/Inconsolata.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
       `
     }
   />
