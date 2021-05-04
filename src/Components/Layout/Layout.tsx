@@ -5,7 +5,6 @@ import {
   ChakraProviderProps,
 } from "@chakra-ui/react"
 import { Navbar } from './Navbar'
-import { Footer } from './Footer'
 import theme from '../../theme'
 import { Helmet } from 'react-helmet'
 import { Fonts } from './Fonts'
@@ -28,7 +27,6 @@ export const Layout = ({
           <Flex flex='1' direction='column' align='center'>
             {children}
           </Flex>
-          <Footer />
         </Flex>
       </ChakraProvider>
     </>
