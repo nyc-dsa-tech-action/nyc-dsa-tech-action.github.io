@@ -33,12 +33,6 @@ export const Navbar = (): JSX.Element => {
         <Link as={GatsbyLink} to='/principles' variant='nav'>
           Principles
         </Link>
-        <Link as={GatsbyLink} to='/stories' variant='nav'>
-          Stories
-        </Link>
-        <Link as={GatsbyLink} to='/research' variant='nav'>
-          Research
-        </Link>
         <Link as={GatsbyLink} to='/coalition-partners' variant='nav'>
           Coalition Partners
         </Link>
