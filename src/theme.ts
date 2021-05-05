@@ -7,7 +7,8 @@ const theme = extendTheme({
     orange: '#FFB803',
   },
   fonts: {
-    'Neue Haas Grotesk Display Pro': 'Neue Haas Grotesk Display Pro'
+    body: 'Neue Haas Grotesk Display Pro',
+    heading: 'Inconsolata'
   },
   components: {
     Link: {
@@ -17,8 +18,7 @@ const theme = extendTheme({
           _hover: {
             textDecoration: 'underline',
             textDecorationColor: 'orange',
-          },
-          fontFamily: 'Neue Haas Grotesk Display Pro',
+          }
         }
       }
     },

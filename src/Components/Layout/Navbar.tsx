@@ -19,7 +19,6 @@ export const Navbar = (): JSX.Element => {
           to='/'
           color='white'
           fontSize={32}
-          fontFamily='Neue Haas Grotesk Display Pro'
           fontWeight='bold'
           _hover={{
             textDecoration: 'underline',
