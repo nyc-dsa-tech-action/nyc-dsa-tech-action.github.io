@@ -36,7 +36,8 @@ export default function CoalitionPartners(): JSX.Element {
         </Wrap>
 
         <Text textAlign='center'>
-          Are you a part of an organization seeking to become a partner? Contact us <Link variant='body'>here</Link>.
+          Are you a part of an organization seeking to become a partner?
+          Contact us <Link href='https://docs.google.com/forms/d/e/1FAIpQLSdTWOER4oq31Q3T7aLesYPrOMrU5lEy27zE7RjBYDMJI89T0Q/viewform' variant='body'>here</Link>.
         </Text>
       </VStack>
     </Layout>
