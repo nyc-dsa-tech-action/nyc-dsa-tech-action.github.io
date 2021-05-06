@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Layout } from '../Components'
+import { Box } from '@chakra-ui/react'
 
 export default function TakeAction(): JSX.Element {
   useEffect(() => {
@@ -18,7 +19,7 @@ export default function TakeAction(): JSX.Element {
   return (
     <Layout title='Take Action | Internet for All NYC'>
       <link href='https://actionnetwork.org/css/style-embed-v3.css' rel='stylesheet' type='text/css' />
-      <div id='can-event-area-internet-for-all-nyc-campaign-launch-2' style={{width: '65%'}} />  
+      <Box id='can-event-area-internet-for-all-nyc-campaign-launch-2' w={['100%', '75%', '50%']} />  
     </Layout>
   )
 }
