@@ -14,12 +14,13 @@ import {
 } from '@chakra-ui/react'
 import { Link as GatsbyLink } from 'gatsby'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import Logo from '../../../static/Images/logo.png'
 
 export const Navbar = (): JSX.Element => {
   return (
     <Flex alignItems='center' bgColor='purple' px={['24px', '64px']} py={['24px', '48px']} justifyContent='space-between'>
       <LinkBox as={HStack}>
-        <Image src='../../../Images/Logos/ColorLogo.jpg' boxSize='45px'/>
+        <Image src={Logo} boxSize='44px'/>
         <LinkOverlay 
           as={GatsbyLink}
           to='/'

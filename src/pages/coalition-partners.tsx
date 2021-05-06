@@ -20,7 +20,7 @@ export default function CoalitionPartners(): JSX.Element {
           We are a growing coalition of organizations fighting for municipal broadband in New York City.
         </Heading>
         
-        <Wrap spacing={['35px', '100px']} justify='center'>
+        <Wrap spacing={['40px', '96px']} justify='center'>
           <Link href='https://techaction.nyc'>
             <Image src={TechActionImage} boxSize={[108, 144]} />
           </Link>
