@@ -24,7 +24,7 @@ export const Layout = ({
         <Fonts />
         <Flex minHeight='100vh' direction='column'>
           <Navbar />
-          <Flex flex='1' direction='column' p={16} align='center'>
+          <Flex flex='1' direction='column' p={['24px', '64px']} align='center'>
             {children}
           </Flex>
         </Flex>

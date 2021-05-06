@@ -7,18 +7,29 @@ const theme = extendTheme({
     orange: '#FFB803',
   },
   fonts: {
-    body: 'Neue Haas Grotesk Display Pro',
-    heading: 'Inconsolata'
+    body: 'Karla',
+    heading: 'Inconsolata',
+    'Helvetica': 'HelveticaNeueCyr',
   },
   components: {
     Link: {
       variants: {
-        'nav': {
+        'body': {
+          color: 'purple',
+          textDecoration: 'underline',
+          textDecorationColor: 'purple',
+        },
+        'navbar': {
           color: 'white',
           _hover: {
             textDecoration: 'underline',
             textDecorationColor: 'orange',
           }
+        },
+        'navmenu': {
+          _hover:{
+            textDecoration: 'none',
+          },
         }
       }
     },
