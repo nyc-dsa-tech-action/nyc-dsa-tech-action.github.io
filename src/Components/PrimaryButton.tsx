@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Button } from "@chakra-ui/react"
+import { Link, Box, Button } from "@chakra-ui/react"
 import { Link as GatsbyLink } from 'gatsby'
 import { createIcon } from '@chakra-ui/icons'
 //import ArrowIcon from './ArrowIcon.js';
@@ -13,24 +13,42 @@ const ArrowIcon = createIcon({
 export interface PrimaryButtonProps {
   title: string;
   href: string;
+  background: string;
+  backgroundHover: string;
   color: string;
 }
 
-export const PrimaryButton = ({href, title, color}: PrimaryButtonProps): JSX.Element => {
+export const PrimaryButton = ({href, title, background, backgroundHover, color}: PrimaryButtonProps): JSX.Element => {
   return (
     <Link as={GatsbyLink} to={href} position="relative" display="inline-block">
-      <Button variant="solid" borderRadius="0" zIndex="1">
+      <Box
+        as="button"
+        variant="solid"
+        background={background}
+        color={color}
+        borderRadius="0"
+        zIndex="1"
+        padding="10px 18px"
+        position="relative"
+        minWidth="159px"
+        fontFamily="Karla"
+        fontWeight="700"
+        transition="transform 0.3s ease"
+        _hover={{ backgroundColor: backgroundHover }}
+        _active={{ transform: 'translate(.3rem, .3rem)' }}
+      >
         {title}
-        <ArrowIcon />
-      </Button>
+        <ArrowIcon boxSize="2em" ml="0.8em" />
+      </Box>
         <div
           style={{
             position: 'absolute',
-            bottom: '-.2rem',
+            bottom: '-.3rem',
             right: '-.3rem',
             background: 'white',
             width: '100%',
             height: '100%',
+            border: `1px solid ${background}`,
             zIndex: 0
           }}
         />

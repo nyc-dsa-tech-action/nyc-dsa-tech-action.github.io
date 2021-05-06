@@ -10,12 +10,14 @@ import { Helmet } from 'react-helmet'
 import { Fonts } from './Fonts'
 
 export interface LayoutProps extends ChakraProviderProps {
-  title: string
+  title: string;
+  padding: array;
 }
 
 export const Layout = ({
     children,
     title,
+    padding,
   }: LayoutProps): JSX.Element => {
   return (
     <>
@@ -24,11 +26,15 @@ export const Layout = ({
         <Fonts />
         <Flex minHeight='100vh' direction='column'>
           <Navbar />
-          <Flex flex='1' direction='column' p={['24px', '64px']} align='center'>
+          <Flex flex='1' direction='column' p={padding} align='center'>
             {children}
           </Flex>
         </Flex>
       </ChakraProvider>
     </>
   )
+}
+
+Layout.defaultProps = {
+  padding: ['24px', '64px'],
 }
