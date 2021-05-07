@@ -50,21 +50,24 @@ export default function Principles(): JSX.Element {
     <UnorderedList spacing={3} styleType={"none"}>
       <ListItem> 
         <ListIcon as={WifiIcon} boxSize="6em" ml="0.8em" />
-        'High speed public broadband should be universally available'
-        'In the 21st Century, the internet is a necessity and a right.'
+        'High speed public broadband should be universally available as a municipal utility service'
+        'In the 21st century, internet is a necessity and a right. The public, non-profit utility service we envision will serve every person and business living in NYC, regardless of immigration status or ability to pay. Rates will be democratically set and low-cost, and each household should be supplied with wireless routers for free on fixed replacement plans.'
       </ListItem>
       <ListItem> 
         <ListIcon as={TradeIcon} boxSize="6em" ml="0.8em" />
         'A public ISP should be locally staffed and unionized'
+        'High-quality, high-speed fiber broadband should be built and staffed by a fully unionized NYC-based public entity, with democratic controls to ensure it is always acting in the public interest.
+        'A highly trained, robust union workforce will be responsible for customer service and maintenance, including 24/7 local support and quick, conveniently scheduled service visits when needed.'
       </ListItem>
       <ListItem>
         <ListIcon as={BrowserIcon} boxSize="6em" ml="0.8em" />
-        'This public, non-profit utility service will be available regardless of ability to pay. Rates will be 
-        democratically set and low-cost.'
+        'Data privacy must be paramount'
+        'The broadband entity should collect as little information as necessary, be transparent about what information is collected, store the information securely, and maintain confidentiality between individuals and the broadband entity. New Yorkers must be able to determine how their data is or is not used.'
       </ListItem>
       <ListItem>
         <ListIcon as={BuildingIcon} boxSize="6em" ml="0.8em" />
-        'Each household should be supplied with wireless routers for free on fixed replacement plans.''
+        'Invest in infrastructure and workers to reap the benefits now and in the future'
+        'Last mile fiber is the only future-proof internet service delivery technology that can consistently permit high bandwidth activities by multiple users. By investing in universal fiber to the home infrastructure today, the City can equitably and efficiently bridge the digital divide, now and into the future. The expansion of access and increased technological capabilities permitted by fiber to the home will also have educational, health and significant economic benefits that will flow to all New Yorkers while saving them and the City money. Ongoing network investment, upgrades, and attentive customer service will ensure a robust union staff that maintains a high level of service via durable, climate resistant systems - public safety, and the well-being of all New Yorkers demands it.'
       </ListItem>
     </UnorderedList>
     </Layout>
