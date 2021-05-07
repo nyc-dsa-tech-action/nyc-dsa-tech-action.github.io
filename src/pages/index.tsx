@@ -65,7 +65,7 @@ export default function Home(): JSX.Element {
         <Container maxWidth="1185px" p={['24px', '64px']} w="100%" textAlign="center">
           <Stack spacing={10}>
             <Heading size="md" fontWeight="500">Internet access is slow, expensive and segregated</Heading>
-            <Image src={MapImage} alt="Map of NYC Broadband Data" />
+            <iframe src="https://new-york-civil-liberties-union.github.io/NYC-Broadband-Map/" width="100%" height="700px" />
             <Text>Only 46% of households living in poverty have internet access. 30% of Black households and 32% of Hispanic households lack home broadband vs. 20% of White households.</Text>
           </Stack>
         </Container>
