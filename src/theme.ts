@@ -2,9 +2,13 @@ import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
   colors: {
+    blue: '#2E70FF',
     purple: '#4000B4',
     aqua: '#5CCDC1',
     orange: '#FFB803',
+    orangeLight: '#FFBC35',
+    offWhite: '#FAFAFA',
+    offBlack: '#222222',
   },
   fonts: {
     body: 'Karla',
@@ -33,7 +37,7 @@ const theme = extendTheme({
         }
       }
     },
-  },
+  }
 })
 
 export default theme
