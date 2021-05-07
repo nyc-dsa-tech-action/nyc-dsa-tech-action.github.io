@@ -1,4 +1,3 @@
-export * from './AccordionItem'
-export * from './PrimaryButton'
+export * from './Icons'
 export * from './Layout'
-export * from './PrinciplesListItem'
+export * from './PrimaryButton'
