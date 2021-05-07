@@ -47,7 +47,7 @@ const BuildingIcon = createIcon({
 export default function Principles(): JSX.Element {
   return (
     <Layout title='Principles | Internet for All NYC'>
-    <UnorderedList spacing={3}>
+    <UnorderedList spacing={3} styleType={"none"}>
       <ListItem> 
         <ListIcon as={WifiIcon} boxSize="6em" ml="0.8em" />
         'High speed public broadband should be universally available'
@@ -55,7 +55,7 @@ export default function Principles(): JSX.Element {
       </ListItem>
       <ListItem> 
         <ListIcon as={TradeIcon} boxSize="6em" ml="0.8em" />
-        'High speed public broadband should be universally available'
+        'A public ISP should be locally staffed and unionized'
       </ListItem>
       <ListItem>
         <ListIcon as={BrowserIcon} boxSize="6em" ml="0.8em" />
