@@ -18,6 +18,17 @@ export const Fonts = (): JSX.Element => (
       @font-face {
         font-family: 'Inconsolata';
         font-style: normal;
+        font-weight: 400;
+        src: url('../../../Fonts/inconsolata-v21-latin-regular.eot');
+        src:
+            url('../../../Fonts/inconsolata-v21-latin-regular.eot?#iefix') format('embedded-opentype'),
+            url('../../../Fonts/inconsolata-v21-latin-regular.woff2') format('woff2'),
+            url('../../../Fonts/inconsolata-v21-latin-regular.woff') format('woff'),
+            url('../../../Fonts/inconsolata-v21-latin-regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Inconsolata';
+        font-style: normal;
         font-weight: 500;
         src: url('../../../Fonts/inconsolata-v21-latin-500.eot');
         src:
@@ -29,13 +40,13 @@ export const Fonts = (): JSX.Element => (
       @font-face {
         font-family: 'Inconsolata';
         font-style: normal;
-        font-weight: 700;
-        src: url('../../../Fonts/Inconsolata-Black.eot');
+        font-weight: 900;
+        src: url('../../../Fonts/inconsolata-v21-latin-900.eot');
         src:
-            url('../../../Fonts/Inconsolata-Black.eot?#iefix') format('embedded-opentype'),
-            url('../../../Fonts/Inconsolata-Black.woff2') format('woff2'),
-            url('../../../Fonts/Inconsolata-Black.woff') format('woff'),
-            url('../../../Fonts/Inconsolata-Black.ttf') format('truetype');
+            url('../../../Fonts/inconsolata-v21-latin-900.eot?#iefix') format('embedded-opentype'),
+            url('../../../Fonts/inconsolata-v21-latin-900.woff2') format('woff2'),
+            url('../../../Fonts/inconsolata-v21-latin-900.woff') format('woff'),
+            url('../../../Fonts/inconsolata-v21-latin-900.ttf') format('truetype');
       }
       @font-face {
         font-family: 'HelveticaNeueCyr';
