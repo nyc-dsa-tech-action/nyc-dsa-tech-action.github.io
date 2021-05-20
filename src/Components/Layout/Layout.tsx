@@ -3,6 +3,7 @@ import {
   Flex,
   ChakraProvider,
   ChakraProviderProps,
+  SpaceProps,
 } from "@chakra-ui/react"
 import { Navbar } from './Navbar'
 import theme from '../../theme'
@@ -10,8 +11,8 @@ import { Helmet } from 'react-helmet'
 import { Fonts } from './Fonts'
 
 export interface LayoutProps extends ChakraProviderProps {
-  title: string;
-  padding: array;
+  title: string
+  padding: SpaceProps["p"]
 }
 
 export const Layout = ({
