@@ -1,26 +1,16 @@
 import React from 'react'
-import {Heading,
-  Image,
-  Link,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react"
 import { Layout } from '../Components'
+import { AspectRatio, Heading } from '@chakra-ui/react'
 
 export default function Principles(): JSX.Element {
   return (
     <Layout title='Research | Internet for All NYC'>
-      <Heading as='h1' size='lg' mb={8} textAlign='center'>
-        The Case for Municipal Broadband is Strong.
+      <Heading fontSize={24} fontWeight={500} textAlign='center' pb={{base: '18px', md: '36px'}}>
+        The case for municpal broadband is strong.
       </Heading>
-      
-      <Wrap spacing={8} justify='center'>
-        <WrapItem>
-          <Link href='../../Downloads/TAWG-FTTP-REPORT-CIRCULATION-DRAFT-2021-04-19.pdf'  download>
-            Download Our Report
-          </Link>
-        </WrapItem>
-      </Wrap>
+      <AspectRatio w={{base:'75%', md:'50%'}} ratio={{base: 1/2, lg: 1}}>
+        <iframe src='../../REPORT-2021-06-14.pdf' />
+      </AspectRatio>
     </Layout>
   )
 }
