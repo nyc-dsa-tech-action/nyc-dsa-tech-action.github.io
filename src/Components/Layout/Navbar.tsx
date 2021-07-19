@@ -36,12 +36,15 @@ export const Navbar = (): JSX.Element => {
           Internet for All
         </LinkOverlay>
       </LinkBox>
-      <HStack spacing='24px' display={['none', 'block']}>
+      <HStack spacing='24px' display={{base: 'none', lg: 'block'}}>
         <Link as={GatsbyLink} to='/principles' variant='navbar'>
           Principles
         </Link>
         <Link as={GatsbyLink} to='/coalition-partners' variant='navbar'>
           Coalition Partners
+        </Link>
+        <Link as={GatsbyLink} to='/research' variant='navbar'>
+          Research
         </Link>
         <Link as={GatsbyLink} to='/take-action' variant='navbar'>
           Take Action
@@ -51,9 +54,9 @@ export const Navbar = (): JSX.Element => {
         <MenuButton backgroundColor='purple'
           as={IconButton}
           icon={<HamburgerIcon color='white'/>}
-          display={['block', 'none']}
+          display={{base: 'block', lg: 'none'}}
         />
-        <MenuList display={['block', 'none']} zIndex={2}>
+        <MenuList display={{base: 'block', lg: 'none'}} zIndex={2}>
           <Link as={GatsbyLink} to='/principles' variant='navmenu'>
             <MenuItem>
               Principles
@@ -62,6 +65,11 @@ export const Navbar = (): JSX.Element => {
           <Link as={GatsbyLink} to='/coalition-partners' variant='navmenu'>
             <MenuItem>
               Coalition Partners
+            </MenuItem>
+          </Link>
+          <Link as={GatsbyLink} to='/research' variant='navmenu'>
+            <MenuItem>
+              Research
             </MenuItem>
           </Link>
           <Link as={GatsbyLink} to='/take-action' variant='navmenu'>
