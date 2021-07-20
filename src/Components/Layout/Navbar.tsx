@@ -43,7 +43,7 @@ export const Navbar = (): JSX.Element => {
         <Link as={GatsbyLink} to='/coalition-partners' variant='navbar'>
           Coalition Partners
         </Link>
-        <Link as={GatsbyLink} to='/research' variant='navbar'>
+        <Link href='../../REPORT-2021-07-18.pdf' variant='navbar'>
           Research
         </Link>
         <Link as={GatsbyLink} to='/take-action' variant='navbar'>
@@ -67,7 +67,7 @@ export const Navbar = (): JSX.Element => {
               Coalition Partners
             </MenuItem>
           </Link>
-          <Link as={GatsbyLink} to='/research' variant='navmenu'>
+          <Link href='../../REPORT-2021-07-18.pdf' variant='navmenu'>
             <MenuItem>
               Research
             </MenuItem>
